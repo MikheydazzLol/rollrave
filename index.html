@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+      <div class="container container_header">
+        <h1 class="logo"><img class="logo__img" src="img/logo.png"></h1>
+          <div class="contanier container__nav_list">
+            <nav class="nav">
+            <ul class="nav_list">
+              <li class="nav-item"><a class="nav-link text-white me-5" href="#map">О нас</a></li>
+              <li class="nav-item"><a class="nav-link"  href="#">Главная</a></li>
+              <li class="nav-item"><a class="nav-link" href="#" onclick="event_toggle()">Акции</a></li>
+              <li class="nav-item"><a class="nav-link" href="bag.html">Κорзина</a></li>
+            </ul>
+          </nav>
+          </div>
+          <div class="container container_telnumber">
+            <ul class="nav_list__telnumber">
+              <li class="nav_item"><a class="nav_link">+79506392785</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</header>
+<main>
+    <section class="menu">
+        <ul class="menu__navigation">
+            <li class="menu__navigation__item" onclick="shawarma_toggle()">Шаурма</li>
+            <li class="menu__navigation__item" onclick="drinks_toggle()">Напитки</li>
+            <li class="menu__navigation__item" onclick="salad_toggle()">Салаты</li>
+            <li class="menu__navigation__item" onclick="ice_toggle()">Мороженое</li>
+        </ul>
+        <section class="event-section event-hide" id="event">
+            <h2 class="event-title">Шаурма, которая рвёт шаблоны!</h2>
+            <div class="event-img-block">
+                <img src="img/first-event-picture.png" alt="" class="event-img">
+                <img src="img/second-event-picture.png" alt="" class="event-img">
+            </div>
+        </section>
+        <div class="container">
+    <div class="shawarma_section type_section" id="shawarma">
+        <h2 class="menu__title">Шаурма</h2>
+
+        <div class="menu__shawarma menu__categories">
+
+            <div class="menu__product_card">
+                <img src="image/shawarma_2.jpg" class="product__image">
+                <div class="product_price_container">
+                    <p class="product__price">399р</p>
+                </div>
+                <div class="product__title__container">
+                    <p class="product__title">Дёнер-кебаб</p>
+                </div>
+            </div>
+
+            <div class="menu__product_card">
+                <img src="image/shawarma_1.jpg" class="product__image">
+                <div class="product_price_container">
+                    <p class="product__price">399р</p>
+                </div>
+                <div class="product__title__container">
+                    <p class="product__title">Бртуч</p>
+                </div>
+            </div>
+
+            <div class="menu__product_card">
+                <img src="image/shawarma_3.jpg" class="product__image">
+                <div class="product_price_container">
+                    <p class="product__price">449р</p>
+                </div>
+                <div class="product__title__container">
+                    <p class="product__title">Буррито</p>
+                </div>
+            </div>
+
+            <div class="menu__product_card">
+                <img src="image/shawarma_4.jpg" class="product__image">
+                <div class="product_price_container">
+                    <p class="product__price">499р</p>
+                </div>
+                <div class="product__title__container">
+                    <p class="product__title">Гирос</p>
+                </div>
+            </div>
+
+            <div class="menu__product_card">
+                <img src="image/shawarma_5.jpg" class="product__image">
+                <div class="product_price_container">
+                    <p class="product__price">349р</p>
+                </div>
+                <div class="product__title__container">
+                    <p class="product__title">Лаваш с шашлычком</p>
+                </div>
+            </div>
+
+            <div class="menu__product_card">
+                <img src="image/shawarma_6.jpg" class="product__image">
+                <div class="product_price_container">
+                    <p class="product__price">349р</p>
+                </div>
+                <div class="product__title__container">
+                    <p class="product__title">Дюрюм</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="drinks_section type_section menu_off" id="drinks">
+        <h2 class="menu__title">Напитки</h2>
+        <div class="menu__drinks menu__categories">
+
+            <div class="menu__product_card">
+                <img src="image/drink_1.jpg" class="product__image" style="right: 0%;">
+                <div class="product_price_container">
+                    <p class="product__price">99р</p>
+                </div>
+                <div class="product__title__container">
+                    <p class="product__title">Чай</p>
+                </div>
+            </div>
+
+            <div class="menu__product_card">
+                <img src="image/drink_2.jpg" class="product__image" style="right: 50%;">
+                <div class="product_price_container">
+                    <p class="product__price">149р</p>
+                </div>
+                <div class="product__title__container">
+                    <p class="product__title">Экспрессо</p>
+                </div>
+            </div>
+
+            <div class="menu__product_card">
+                <img src="image/drink_3.jpg" class="product__image" style="right: 30%;">
+                <div class="product_price_container">
+                    <p class="product__price">149р</p>
+                </div>
+                <div class="product__title__container">
+                    <p class="product__title">Американо</p>
+                </div>
+            </div>
+
+            <div class="menu__product_card">
+                <img src="image/drink_4.jpg" class="product__image" style="bottom: -40%; right: 30%;">
+                <div class="product_price_container">
+                    <p class="product__price">149р</p>
+                </div>
+                <div class="product__title__container">
+                    <p class="product__title">Латте</p>
+                </div>
+            </div>
+
+            <div class="menu__product_card">
+                <img src="image/drink_5.jpg" class="product__image">
+                <div class="product_price_container">
+                    <p class="product__price">99р</p>
+                </div>
+                <div class="product__title__container">
+                    <p class="product__title">Лимонад</p>
+                </div>
+            </div>
+
+            <div class="menu__product_card">
+                <img src="image/drink_6.jpg" class="product__image">
+                <div class="product_price_container">
+                    <p class="product__price">149р</p>
+                </div>
+                <div class="product__title__container">
+                    <p class="product__title">Раф</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="salad_section type_section menu_off" id="salad">
+        <h2 class="menu__title">Салаты</h2>
+        <div class="menu__salad menu__categories">
+
+            <div class="menu__product_card">
+                <img src="image/salad_6.jpg" class="product__image" style="right: 0%;">
+                <div class="product_price_container">
+                    <p class="product__price">249р</p>
+                </div>
+                <div class="product__title__container">
+                    <p class="product__title">Цезарь</p>
+                </div>
+            </div>
+
+            <div class="menu__product_card">
+                <img src="image/salad_1.jpg" class="product__image" style="right: 50%;">
+                <div class="product_price_container">
+                    <p class="product__price">199р</p>
+                </div>
+                <div class="product__title__container">
+                    <p class="product__title">Винигрет</p>
+                </div>
+            </div>
+
+            <div class="menu__product_card">
+                <img src="image/salad_2.jpg" class="product__image">
+                <div class="product_price_container">
+                    <p class="product__price">299р</p>
+                </div>
+                <div class="product__title__container">
+                    <p class="product__title">Греческий</p>
+                </div>
+            </div>
+
+            <div class="menu__product_card">
+                <img src="image/salad_3.jpg" class="product__image" style="bottom: -40%; right: 30%;">
+                <div class="product_price_container">
+                    <p class="product__price">249р</p>
+                </div>
+                <div class="product__title__container">
+                    <p class="product__title">Куриный</p>
+                </div>
+            </div>
+
+            <div class="menu__product_card">
+                <img src="image/salad_4.jpg" class="product__image">
+                <div class="product_price_container">
+                    <p class="product__price">299р</p>
+                </div>
+                <div class="product__title__container">
+                    <p class="product__title">Оливье</p>
+                </div>
+            </div>
+
+            <div class="menu__product_card">
+                <img src="image/salad_5.jpg" class="product__image">
+                <div class="product_price_container">
+                    <p class="product__price">149р</p>
+                </div>
+                <div class="product__title__container">
+                    <p class="product__title">Фруктовый</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="iceCream_section type_section menu_off" id="iceCream">
+        <h2 class="menu__title">Мороженое</h2>
+        <div class="menu__iceCream menu__categories">
+
+            <div class="menu__product_card">
+                <img src="image/ice_6.jpg" class="product__image" style="right: 0%;">
+                <div class="product_price_container">
+                    <p class="product__price">99р</p>
+                </div>
+                <div class="product__title__container">
+                    <p class="product__title">Крем-брюле</p>
+                </div>
+            </div>
+
+            <div class="menu__product_card">
+                <img src="image/ice_1.jpg" class="product__image">
+                <div class="product_price_container">
+                    <p class="product__price">99р</p>
+                </div>
+                <div class="product__title__container">
+                    <p class="product__title">Пломбир</p>
+                </div>
+            </div>
+
+            <div class="menu__product_card">
+                <img src="image/ice_2.jpg" class="product__image">
+                <div class="product_price_container">
+                    <p class="product__price">99р</p>
+                </div>
+                <div class="product__title__container">
+                    <p class="product__title">Фруктовый лёд</p>
+                </div>
+            </div>
+
+            <div class="menu__product_card">
+                <img src="image/ice_3.jpg" class="product__image">
+                <div class="product_price_container">
+                    <p class="product__price">99р</p>
+                </div>
+                <div class="product__title__container">
+                    <p class="product__title">Шоколадное</p>
+                </div>
+            </div>
+
+            <div class="menu__product_card">
+                <img src="image/ice_4.jpg" class="product__image" style="right: 30%;">
+                <div class="product_price_container">
+                    <p class="product__price">99р</p>
+                </div>
+                <div class="product__title__container">
+                    <p class="product__title">Щербет</p>
+                </div>
+            </div>
+
+            <div class="menu__product_card">
+                <img src="image/ice_5.jpg" class="product__image" style="right: 30%;">
+                <div class="product_price_container">
+                    <p class="product__price">99р</p>
+                </div>
+                <div class="product__title__container">
+                    <p class="product__title">Эскимо</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+        </div>
+
+    </section>
+<section class="first-section" id="map">
+    <h2 class="map-title">Нас можно найти на карте</h2>
+    <div class="shop-block">
+        <div class="map-block">
+            <img src="img/map-picture.png" alt="" class="map-picture-img">
+            <span class="map-text">Адрес: Мясницкая, 13/2</span>
+        </div>
+        <div class="shop-pictures-block">
+            <div class="picture-block">
+                <img src="img/first-picture.png" alt="" class="shop-picture-img first-picture">
+                <div class="picture-text-block yellow">
+                    <p class="picture-text white-text">Не проходи мимо!</p>
+                </div>
+            </div>
+            <div class="picture-block">
+                <div class="picture-text-block white">
+                    <p class="picture-text yellow-text">Купи что пожелаешь!</p>
+                </div>
+                <img src="img/second-picture.png" alt="" class="shop-picture-img second-picture">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="second-section">
+    <h2>Особенности нашего заведения</h2>
+    <div class="specificaties">
+        <div class="block white">
+            <img src="img/first.png" alt="">
+            <p class="second-section-text">Особые рецепты</p>
+        </div>
+        <div class="block yellow">
+            <img src="img/second.png" alt="">
+            <p class="second-section-text">Быстрая готовка</p>
+        </div>
+        <div class="block white">
+            <img src="img/third.png" alt="">
+            <p class="second-section-text">Проверенные продукты</p>
+        </div>
+    </div>
+</section>
+</main>
+<footer class="footer">
+    <h2 class="footer_title">Полезная информация</h2>
+    <div class="footer__parts">
+    <div class="footer__left_part">
+        <p class="footer_content">Номер тел.: <br /> +79506392785</p>
+        <p class="footer_content">Эл. почта: <br /> RollRave@gmail.com</p>
+        <p class="footer_content">Адрес: <br /> Мясницкая, 13/2</p>
+    </div>
+    <div class="footer__right_part">
+        <p class="footer_content">Следите за нашими соцсетями <br /> Telegram, VK, Instagram</p>
+        <p class="footer_content"> Все права защищены <br /> 2024 RollRave</p>
+    </div>
+    </div>
+</footer>
+<script src="js/menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container container_header">
+          <h1 class="logo"><img class="logo__img" src="img/logo.png"></h1>
+            <div class="contanier container__nav_list">
+              <nav class="nav">
+              <ul class="nav_list">
+                <li class="nav-item"><a class="nav-link text-white me-5" href="#">О нас</a></li>
+                <li class="nav-item"><a class="nav-link"  href="#">Скидки</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Акции</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html">Меню</a></li>
+              </ul>
+            </nav>
+            </div>
+            <div class="container container_telnumber">
+              <ul class="nav_list__telnumber">
+                <li class="nav_item"><a class="nav_link">+79506392785</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+  </header>
+    <main>
+    <section class="bag">
+    <div class="container">
+        <h2 class="menu__title">Корзина</h2>
+        <div class="bag__orders">
+
+            <div class="order" id="order1">
+                <img src="image/order_1.png" class="order__image">
+                <p class="order__name order_text">Буррито</p>
+                <div class="order__amount">
+                    <button class="amount_add amount_button order_text" onclick="burrito_buy()">+</button>
+                    <p class="amount_value order_text" id="amount1">1</p>
+                    <button class="amount_remove amount_button order_text" onclick="burrito_del()">-</button>
+                </div>
+                <p class="order__sum order_text" id="price1" price="449">449</p>
+                <img src="image/delete_image.png" class="order__delete" onclick="delOrder1()">
+            </div>
+
+            <div class="order" id="order2">
+                <img src="image/order_2.png" class="order__image">
+                <p class="order__name order_text">Греческий</p>
+                <div class="order__amount">
+                    <button class="amount_add amount_button order_text" onclick="greece_buy()">+</button>
+                    <p class="amount_value order_text" id="amount2">1</p>
+                    <button class="amount_remove amount_button order_text" onclick="greece_del()">-</button>
+                </div>
+                <p class="order__sum order_text" id="price2" price="299">299</p>
+                <img src="image/delete_image.png" class="order__delete" onclick="delOrder2()">
+            </div>
+
+            <div class="order" id="order3">
+                <img src="image/order_3.png" class="order__image">
+                <p class="order__name order_text">Лимонад</p>
+                <div class="order__amount">
+                    <button class="amount_add amount_button order_text" onclick="lemonade_buy()">+</button>
+                    <p class="amount_value order_text" id="amount3">1</p>
+                    <button class="amount_remove amount_button order_text" onclick="lemonade_del()">-</button>
+                </div>
+                <p class="order__sum order_text" id="price3" price="99">99</p>
+                <img src="image/delete_image.png" class="order__delete" onclick="delOrder3()">
+            </div>
+
+        </div>
+        <div class="bag__making_order">
+            <div class="order__sum">
+                <p class="sum_text">Итого:</p>
+                <p class="sum_text" id="final_sum">847</p>
+            </div>
+            <button class="buyBtn" onclick="form_toggle()">Купить</button>
+        </div>
+    </div>
+    <div class="form-hide basket-bg-block" id="form">
+     <div class="basket-block">
+                <h2 class="form-title">Заказ</h2>
+                <form action="" class="basket-form">
+                    <input type="text" name="phone" value="номер" class="basket-form-input">
+                    <input type="text" name="address" value="адрес" class="basket-form-input">
+                    <input type="text" name="code" value="промокод" class="basket-form-input">
+                </form>
+                <button class="form-btn" onclick="form_toggle()">оформить</button>
+            </div>
+    </div>
+    </section>
+    </main>
+    <footer class="footer">
+        <h2 class="footer_title">Полезная информация</h2>
+        <div class="footer__parts">
+        <div class="footer__left_part">
+            <p class="footer_content">Номер тел.: <br /> +79506392785</p>
+            <p class="footer_content">Эл. почта: <br /> RollRave@gmail.com</p>
+            <p class="footer_content">Адрес: <br /> Мясницкая, 13/2</p>
+        </div>
+        <div class="footer__right_part">
+            <p class="footer_content">Следите за нашими соцсетями <br /> Telegram, VK, Instagram</p>
+            <p class="footer_content"> Все права защищены <br /> 2024 RollRave</p>
+        </div>
+        </div>
+        <!-- <section class="third-section >
+           
+        </section> -->
+    </footer>
+    <script src="js/bag.js"></script>
+</body>
+</html>
